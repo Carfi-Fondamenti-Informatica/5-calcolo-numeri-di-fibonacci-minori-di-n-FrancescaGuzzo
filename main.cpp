@@ -2,11 +2,11 @@
 using namespace std;
 
 int main (){
-    int n, p=1, s=0, F;
+     int n, p=1, s=0, F;
     cout << "inserire un valore intero: ";
     cin >> n;
-    int i=0;
-    while (i<n){
+
+    for (int i=0; i<n; i++){
         F= p+s;
         if (F<=n) {
             cout << F << endl;
@@ -15,7 +15,6 @@ int main (){
         }
         p=s;
         s=F;
-        i++;
     }
     return 0;
 }
