@@ -5,8 +5,8 @@ int main (){
     int n, p=1, s=0, F;
     cout << "inserire un valore intero: ";
     cin >> n;
-
-    for (int i=0; i<n; i++){
+    int i=0;
+    while (i<n){
         F= p+s;
         if (F<=n) {
             cout << F << endl;
@@ -15,6 +15,7 @@ int main (){
         }
         p=s;
         s=F;
+        i++;
     }
     return 0;
 }
