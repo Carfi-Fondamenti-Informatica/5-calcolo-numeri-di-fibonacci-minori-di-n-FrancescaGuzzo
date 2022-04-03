@@ -8,11 +8,11 @@ int main() {
 
     for (int i=0; i<n; i++){
             F= p+s;
-            s=p;
-            p=F;
-        if (s<=n) {
-            cout << s << endl;
-    }
+        if (F<=n) {
+            cout << F << endl;
+        }
+            p=s;
+            s=F;
     }
    return 0;
 }
